@@ -1,0 +1,235 @@
+com.project.CustomerRelationshipManagementApplication 8286 main  INFO  Starting CustomerRelationshipManagementApplication using Java 17.0.1 on DESKTOP-I61OLS1 with PID 15824 (C:\Users\Admin\IdeaProjects\customer_relationship_management\target\classes started by Admin in C:\Users\Admin\IdeaProjects\customer_relationship_management) 2024-07-10 15:30:31,390  
+ com.project.CustomerRelationshipManagementApplication 8329 main  DEBUG  Running with Spring Boot v2.7.10, Spring v5.3.26 2024-07-10 15:30:31,433  
+ com.project.CustomerRelationshipManagementApplication 8331 main  INFO  No active profile set, falling back to 1 default profile: "default" 2024-07-10 15:30:31,435  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 14378 main  INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 2024-07-10 15:30:37,482  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 14796 main  INFO  Finished Spring Data repository scanning in 337 ms. Found 2 JPA repository interfaces. 2024-07-10 15:30:37,900  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 25343 main  INFO  Tomcat initialized with port(s): 8080 (http) 2024-07-10 15:30:48,447  
+ org.apache.catalina.core.StandardService 25376 main  INFO  Starting service [Tomcat] 2024-07-10 15:30:48,480  
+ org.apache.catalina.core.StandardEngine 25377 main  INFO  Starting Servlet engine: [Apache Tomcat/9.0.73] 2024-07-10 15:30:48,481  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 25891 main  INFO  Initializing Spring embedded WebApplicationContext 2024-07-10 15:30:48,995  
+ org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 25893 main  INFO  Root WebApplicationContext: initialization completed in 17060 ms 2024-07-10 15:30:48,997  
+ com.zaxxer.hikari.HikariDataSource 25987 main  INFO  HikariPool-1 - Starting... 2024-07-10 15:30:49,091  
+ com.zaxxer.hikari.HikariDataSource 27162 main  INFO  HikariPool-1 - Start completed. 2024-07-10 15:30:50,266  
+ org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 27176 main  INFO  H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer' 2024-07-10 15:30:50,280  
+ org.hibernate.jpa.internal.util.LogHelper 28590 main  INFO  HHH000204: Processing PersistenceUnitInfo [name: default] 2024-07-10 15:30:51,694  
+ org.hibernate.Version 29694 main  INFO  HHH000412: Hibernate ORM core version 5.6.15.Final 2024-07-10 15:30:52,798  
+ org.hibernate.annotations.common.Version 30956 main  INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 2024-07-10 15:30:54,060  
+ org.hibernate.dialect.Dialect 32480 main  INFO  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 2024-07-10 15:30:55,584  
+ org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 34605 main  INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 2024-07-10 15:30:57,709  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 34618 main  INFO  Initialized JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 15:30:57,722  
+ org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext 34629 main  WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'authFilter'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.project.filter.jwtAuthFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 2024-07-10 15:30:57,733  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 34630 main  INFO  Closing JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 15:30:57,734  
+ org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 34630 main  INFO  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down' 2024-07-10 15:30:57,734  
+ com.zaxxer.hikari.HikariDataSource 34653 main  INFO  HikariPool-1 - Shutdown initiated... 2024-07-10 15:30:57,757  
+ com.zaxxer.hikari.HikariDataSource 34655 main  INFO  HikariPool-1 - Shutdown completed. 2024-07-10 15:30:57,759  
+ org.apache.catalina.core.StandardService 34657 main  INFO  Stopping service [Tomcat] 2024-07-10 15:30:57,761  
+ org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 34669 main  INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 2024-07-10 15:30:57,773  
+ org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 34847 main  ERROR  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authFilter in com.project.config.SecurityConfig required a bean of type 'com.project.filter.jwtAuthFilter' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.project.filter.jwtAuthFilter' in your configuration.
+ 2024-07-10 15:30:57,951  
+ com.project.CustomerRelationshipManagementApplication 963 main  INFO  Starting CustomerRelationshipManagementApplication using Java 17.0.1 on DESKTOP-I61OLS1 with PID 2760 (C:\Users\Admin\IdeaProjects\customer_relationship_management\target\classes started by Admin in C:\Users\Admin\IdeaProjects\customer_relationship_management) 2024-07-10 15:32:40,898  
+ com.project.CustomerRelationshipManagementApplication 968 main  DEBUG  Running with Spring Boot v2.7.10, Spring v5.3.26 2024-07-10 15:32:40,903  
+ com.project.CustomerRelationshipManagementApplication 969 main  INFO  No active profile set, falling back to 1 default profile: "default" 2024-07-10 15:32:40,904  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 2463 main  INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 2024-07-10 15:32:42,398  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 2554 main  INFO  Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces. 2024-07-10 15:32:42,489  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 3602 main  INFO  Tomcat initialized with port(s): 8080 (http) 2024-07-10 15:32:43,537  
+ org.apache.catalina.core.StandardService 3617 main  INFO  Starting service [Tomcat] 2024-07-10 15:32:43,552  
+ org.apache.catalina.core.StandardEngine 3618 main  INFO  Starting Servlet engine: [Apache Tomcat/9.0.73] 2024-07-10 15:32:43,553  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 3813 main  INFO  Initializing Spring embedded WebApplicationContext 2024-07-10 15:32:43,748  
+ org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 3814 main  INFO  Root WebApplicationContext: initialization completed in 2766 ms 2024-07-10 15:32:43,749  
+ com.zaxxer.hikari.HikariDataSource 3872 main  INFO  HikariPool-1 - Starting... 2024-07-10 15:32:43,807  
+ com.zaxxer.hikari.HikariDataSource 4139 main  INFO  HikariPool-1 - Start completed. 2024-07-10 15:32:44,074  
+ org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 4157 main  INFO  H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer' 2024-07-10 15:32:44,092  
+ org.springframework.boot.web.embedded.tomcat.TomcatStarter 4184 main  ERROR  Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'authFilter'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'jwtAuthFilter': Requested bean is currently in creation: Is there an unresolvable circular reference? 2024-07-10 15:32:44,119  
+ org.apache.catalina.core.StandardService 4212 main  INFO  Stopping service [Tomcat] 2024-07-10 15:32:44,147  
+ org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext 4220 main  WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat 2024-07-10 15:32:44,155  
+ com.zaxxer.hikari.HikariDataSource 4221 main  INFO  HikariPool-1 - Shutdown initiated... 2024-07-10 15:32:44,156  
+ com.zaxxer.hikari.HikariDataSource 4226 main  INFO  HikariPool-1 - Shutdown completed. 2024-07-10 15:32:44,161  
+ org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 4240 main  INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 2024-07-10 15:32:44,175  
+ org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 4278 main  ERROR  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthFilter (field org.springframework.security.core.userdetails.UserDetailsService com.project.filter.jwtAuthFilter.userDetailsService)
+↑     ↓
+|  securityConfig (field private com.project.filter.jwtAuthFilter com.project.config.SecurityConfig.authFilter)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+ 2024-07-10 15:32:44,213  
+ com.project.CustomerRelationshipManagementApplication 1143 main  INFO  Starting CustomerRelationshipManagementApplication using Java 17.0.1 on DESKTOP-I61OLS1 with PID 8860 (C:\Users\Admin\IdeaProjects\customer_relationship_management\target\classes started by Admin in C:\Users\Admin\IdeaProjects\customer_relationship_management) 2024-07-10 15:36:43,610  
+ com.project.CustomerRelationshipManagementApplication 1146 main  DEBUG  Running with Spring Boot v2.7.10, Spring v5.3.26 2024-07-10 15:36:43,613  
+ com.project.CustomerRelationshipManagementApplication 1147 main  INFO  No active profile set, falling back to 1 default profile: "default" 2024-07-10 15:36:43,614  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 2414 main  INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 2024-07-10 15:36:44,881  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 2555 main  INFO  Finished Spring Data repository scanning in 123 ms. Found 2 JPA repository interfaces. 2024-07-10 15:36:45,022  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 3694 main  INFO  Tomcat initialized with port(s): 8080 (http) 2024-07-10 15:36:46,161  
+ org.apache.catalina.core.StandardService 3716 main  INFO  Starting service [Tomcat] 2024-07-10 15:36:46,183  
+ org.apache.catalina.core.StandardEngine 3717 main  INFO  Starting Servlet engine: [Apache Tomcat/9.0.73] 2024-07-10 15:36:46,184  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 4006 main  INFO  Initializing Spring embedded WebApplicationContext 2024-07-10 15:36:46,473  
+ org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 4006 main  INFO  Root WebApplicationContext: initialization completed in 2788 ms 2024-07-10 15:36:46,473  
+ com.zaxxer.hikari.HikariDataSource 4064 main  INFO  HikariPool-1 - Starting... 2024-07-10 15:36:46,531  
+ com.zaxxer.hikari.HikariDataSource 4376 main  INFO  HikariPool-1 - Start completed. 2024-07-10 15:36:46,843  
+ org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 4396 main  INFO  H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer' 2024-07-10 15:36:46,863  
+ org.springframework.boot.web.embedded.tomcat.TomcatStarter 4436 main  ERROR  Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'authFilter'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'jwtAuthFilter': Requested bean is currently in creation: Is there an unresolvable circular reference? 2024-07-10 15:36:46,903  
+ org.apache.catalina.core.StandardService 4474 main  INFO  Stopping service [Tomcat] 2024-07-10 15:36:46,941  
+ org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext 4480 main  WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat 2024-07-10 15:36:46,947  
+ com.zaxxer.hikari.HikariDataSource 4481 main  INFO  HikariPool-1 - Shutdown initiated... 2024-07-10 15:36:46,948  
+ com.zaxxer.hikari.HikariDataSource 4485 main  INFO  HikariPool-1 - Shutdown completed. 2024-07-10 15:36:46,952  
+ org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 4500 main  INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 2024-07-10 15:36:46,967  
+ org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 4525 main  ERROR  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthFilter (field org.springframework.security.core.userdetails.UserDetailsService com.project.filter.jwtAuthFilter.userDetailsService)
+↑     ↓
+|  securityConfig (field private com.project.filter.jwtAuthFilter com.project.config.SecurityConfig.authFilter)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+ 2024-07-10 15:36:46,992  
+ com.project.CustomerRelationshipManagementApplication 837 main  INFO  Starting CustomerRelationshipManagementApplication using Java 17.0.1 on DESKTOP-I61OLS1 with PID 11044 (C:\Users\Admin\IdeaProjects\customer_relationship_management\target\classes started by Admin in C:\Users\Admin\IdeaProjects\customer_relationship_management) 2024-07-10 15:42:31,018  
+ com.project.CustomerRelationshipManagementApplication 840 main  DEBUG  Running with Spring Boot v2.7.10, Spring v5.3.26 2024-07-10 15:42:31,021  
+ com.project.CustomerRelationshipManagementApplication 841 main  INFO  No active profile set, falling back to 1 default profile: "default" 2024-07-10 15:42:31,022  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 2233 main  INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 2024-07-10 15:42:32,414  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 2335 main  INFO  Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces. 2024-07-10 15:42:32,516  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 3268 main  INFO  Tomcat initialized with port(s): 8080 (http) 2024-07-10 15:42:33,449  
+ org.apache.catalina.core.StandardService 3287 main  INFO  Starting service [Tomcat] 2024-07-10 15:42:33,468  
+ org.apache.catalina.core.StandardEngine 3288 main  INFO  Starting Servlet engine: [Apache Tomcat/9.0.73] 2024-07-10 15:42:33,469  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 3474 main  INFO  Initializing Spring embedded WebApplicationContext 2024-07-10 15:42:33,655  
+ org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 3474 main  INFO  Root WebApplicationContext: initialization completed in 2561 ms 2024-07-10 15:42:33,655  
+ com.zaxxer.hikari.HikariDataSource 3521 main  INFO  HikariPool-1 - Starting... 2024-07-10 15:42:33,702  
+ com.zaxxer.hikari.HikariDataSource 3802 main  INFO  HikariPool-1 - Start completed. 2024-07-10 15:42:33,983  
+ org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 3821 main  INFO  H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer' 2024-07-10 15:42:34,002  
+ org.hibernate.jpa.internal.util.LogHelper 4018 main  INFO  HHH000204: Processing PersistenceUnitInfo [name: default] 2024-07-10 15:42:34,199  
+ org.hibernate.Version 4090 main  INFO  HHH000412: Hibernate ORM core version 5.6.15.Final 2024-07-10 15:42:34,271  
+ org.hibernate.annotations.common.Version 4304 main  INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 2024-07-10 15:42:34,485  
+ org.hibernate.dialect.Dialect 4466 main  INFO  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect 2024-07-10 15:42:34,647  
+ org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 5285 main  INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 2024-07-10 15:42:35,466  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 5299 main  INFO  Initialized JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 15:42:35,480  
+ com.project.filter.jwtAuthFilter 6030 main  DEBUG  Filter 'jwtAuthFilter' configured for use 2024-07-10 15:42:36,211  
+ org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 6691 main  WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 2024-07-10 15:42:36,872  
+ org.springframework.security.web.DefaultSecurityFilterChain 7288 main  INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69c6e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e53bb4f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f03fdc0, org.springframework.security.web.header.HeaderWriterFilter@7a7bb083, org.springframework.security.web.authentication.logout.LogoutFilter@58d4fe33, com.project.filter.jwtAuthFilter@59c00010, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1715193f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dabdd11, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5929059c, org.springframework.security.web.session.SessionManagementFilter@3891b430, org.springframework.security.web.access.ExceptionTranslationFilter@2bfa5678, org.springframework.security.web.access.intercept.AuthorizationFilter@81cd90e] 2024-07-10 15:42:37,469  
+ springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping 7346 main  INFO  Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 2024-07-10 15:42:37,527  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 7917 main  INFO  Tomcat started on port(s): 8080 (http) with context path '' 2024-07-10 15:42:38,098  
+ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper 7919 main  INFO  Context refreshed 2024-07-10 15:42:38,100  
+ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper 7948 main  INFO  Found 1 custom documentation plugin(s) 2024-07-10 15:42:38,129  
+ springfox.documentation.spring.web.scanners.ApiListingReferenceScanner 7965 main  INFO  Scanning for api listing references 2024-07-10 15:42:38,146  
+ com.project.CustomerRelationshipManagementApplication 8252 main  INFO  Started CustomerRelationshipManagementApplication in 7.943 seconds (JVM running for 8.545) 2024-07-10 15:42:38,433  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 59583 http-nio-8080-exec-7  INFO  Initializing Spring DispatcherServlet 'dispatcherServlet' 2024-07-10 15:43:29,764  
+ org.springframework.web.servlet.DispatcherServlet 59584 http-nio-8080-exec-7  INFO  Initializing Servlet 'dispatcherServlet' 2024-07-10 15:43:29,765  
+ org.springframework.web.servlet.DispatcherServlet 59585 http-nio-8080-exec-7  INFO  Completed initialization in 1 ms 2024-07-10 15:43:29,766  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 853515 SpringApplicationShutdownHook  INFO  Closing JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 15:56:43,696  
+ org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 853517 SpringApplicationShutdownHook  INFO  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down' 2024-07-10 15:56:43,698  
+ com.zaxxer.hikari.HikariDataSource 853625 SpringApplicationShutdownHook  INFO  HikariPool-1 - Shutdown initiated... 2024-07-10 15:56:43,806  
+ com.zaxxer.hikari.HikariDataSource 853642 SpringApplicationShutdownHook  INFO  HikariPool-1 - Shutdown completed. 2024-07-10 15:56:43,823  
+ com.project.CustomerRelationshipManagementApplication 1454 main  INFO  Starting CustomerRelationshipManagementApplication using Java 17.0.1 on DESKTOP-I61OLS1 with PID 13520 (C:\Users\Admin\IdeaProjects\customer_relationship_management\target\classes started by Admin in C:\Users\Admin\IdeaProjects\customer_relationship_management) 2024-07-10 15:56:58,542  
+ com.project.CustomerRelationshipManagementApplication 1462 main  DEBUG  Running with Spring Boot v2.7.10, Spring v5.3.26 2024-07-10 15:56:58,550  
+ com.project.CustomerRelationshipManagementApplication 1463 main  INFO  The following 1 profile is active: "prod" 2024-07-10 15:56:58,551  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 3190 main  INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 2024-07-10 15:57:00,278  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 3307 main  INFO  Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces. 2024-07-10 15:57:00,395  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 4979 main  INFO  Tomcat initialized with port(s): 8080 (http) 2024-07-10 15:57:02,067  
+ org.apache.catalina.core.StandardService 5012 main  INFO  Starting service [Tomcat] 2024-07-10 15:57:02,100  
+ org.apache.catalina.core.StandardEngine 5013 main  INFO  Starting Servlet engine: [Apache Tomcat/9.0.73] 2024-07-10 15:57:02,101  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 5216 main  INFO  Initializing Spring embedded WebApplicationContext 2024-07-10 15:57:02,304  
+ org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 5217 main  INFO  Root WebApplicationContext: initialization completed in 3624 ms 2024-07-10 15:57:02,305  
+ com.zaxxer.hikari.HikariDataSource 5275 main  INFO  HikariPool-1 - Starting... 2024-07-10 15:57:02,363  
+ com.zaxxer.hikari.HikariDataSource 7695 main  INFO  HikariPool-1 - Start completed. 2024-07-10 15:57:04,783  
+ org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 7705 main  INFO  H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///enterprisejavabatch' 2024-07-10 15:57:04,793  
+ org.hibernate.jpa.internal.util.LogHelper 8043 main  INFO  HHH000204: Processing PersistenceUnitInfo [name: default] 2024-07-10 15:57:05,131  
+ org.hibernate.Version 8372 main  INFO  HHH000412: Hibernate ORM core version 5.6.15.Final 2024-07-10 15:57:05,460  
+ org.hibernate.annotations.common.Version 8760 main  INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 2024-07-10 15:57:05,848  
+ org.hibernate.dialect.Dialect 8949 main  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 2024-07-10 15:57:06,037  
+ org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 13835 main  INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 2024-07-10 15:57:10,923  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 13846 main  INFO  Initialized JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 15:57:10,934  
+ com.project.filter.jwtAuthFilter 14311 main  DEBUG  Filter 'jwtAuthFilter' configured for use 2024-07-10 15:57:11,399  
+ org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 14900 main  WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 2024-07-10 15:57:11,988  
+ org.springframework.security.web.DefaultSecurityFilterChain 15199 main  INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3fb42ec7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f7b1d6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@16257f8c, org.springframework.security.web.header.HeaderWriterFilter@20608ef4, org.springframework.security.web.authentication.logout.LogoutFilter@4779df3d, com.project.filter.jwtAuthFilter@458b4487, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c31e01f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79080255, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32d8e58d, org.springframework.security.web.session.SessionManagementFilter@a7fd77f, org.springframework.security.web.access.ExceptionTranslationFilter@22ba30b0, org.springframework.security.web.access.intercept.AuthorizationFilter@1e37cb10] 2024-07-10 15:57:12,287  
+ springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping 15234 main  INFO  Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 2024-07-10 15:57:12,322  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 15639 main  INFO  Tomcat started on port(s): 8080 (http) with context path '' 2024-07-10 15:57:12,727  
+ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper 15642 main  INFO  Context refreshed 2024-07-10 15:57:12,730  
+ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper 15677 main  INFO  Found 1 custom documentation plugin(s) 2024-07-10 15:57:12,765  
+ springfox.documentation.spring.web.scanners.ApiListingReferenceScanner 15712 main  INFO  Scanning for api listing references 2024-07-10 15:57:12,800  
+ com.project.CustomerRelationshipManagementApplication 15950 main  INFO  Started CustomerRelationshipManagementApplication in 15.387 seconds (JVM running for 17.597) 2024-07-10 15:57:13,038  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 190536 http-nio-8080-exec-2  INFO  Initializing Spring DispatcherServlet 'dispatcherServlet' 2024-07-10 16:00:07,624  
+ org.springframework.web.servlet.DispatcherServlet 190537 http-nio-8080-exec-2  INFO  Initializing Servlet 'dispatcherServlet' 2024-07-10 16:00:07,625  
+ org.springframework.web.servlet.DispatcherServlet 190539 http-nio-8080-exec-2  INFO  Completed initialization in 2 ms 2024-07-10 16:00:07,627  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 232482 SpringApplicationShutdownHook  INFO  Closing JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 16:00:49,570  
+ com.zaxxer.hikari.HikariDataSource 232494 SpringApplicationShutdownHook  INFO  HikariPool-1 - Shutdown initiated... 2024-07-10 16:00:49,582  
+ com.zaxxer.hikari.HikariDataSource 232552 SpringApplicationShutdownHook  INFO  HikariPool-1 - Shutdown completed. 2024-07-10 16:00:49,640  
+ com.project.CustomerRelationshipManagementApplication 2753 main  INFO  Starting CustomerRelationshipManagementApplication using Java 17.0.1 on DESKTOP-I61OLS1 with PID 16564 (C:\Users\Admin\IdeaProjects\customer_relationship_management\target\classes started by Admin in C:\Users\Admin\IdeaProjects\customer_relationship_management) 2024-07-10 17:05:32,500  
+ com.project.CustomerRelationshipManagementApplication 2764 main  DEBUG  Running with Spring Boot v2.7.10, Spring v5.3.26 2024-07-10 17:05:32,511  
+ com.project.CustomerRelationshipManagementApplication 2765 main  INFO  The following 1 profile is active: "prod" 2024-07-10 17:05:32,512  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 4947 main  INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 2024-07-10 17:05:34,694  
+ org.springframework.data.repository.config.RepositoryConfigurationDelegate 5188 main  INFO  Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces. 2024-07-10 17:05:34,935  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 6734 main  INFO  Tomcat initialized with port(s): 8080 (http) 2024-07-10 17:05:36,481  
+ org.apache.catalina.core.StandardService 6759 main  INFO  Starting service [Tomcat] 2024-07-10 17:05:36,506  
+ org.apache.catalina.core.StandardEngine 6760 main  INFO  Starting Servlet engine: [Apache Tomcat/9.0.73] 2024-07-10 17:05:36,507  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 7019 main  INFO  Initializing Spring embedded WebApplicationContext 2024-07-10 17:05:36,766  
+ org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 7020 main  INFO  Root WebApplicationContext: initialization completed in 4151 ms 2024-07-10 17:05:36,767  
+ com.zaxxer.hikari.HikariDataSource 7141 main  INFO  HikariPool-1 - Starting... 2024-07-10 17:05:36,888  
+ com.zaxxer.hikari.HikariDataSource 12973 main  INFO  HikariPool-1 - Start completed. 2024-07-10 17:05:42,720  
+ org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 13003 main  INFO  H2 console available at '/h2-console'. Database available at 'jdbc:mysql:///enterprisejavabatch' 2024-07-10 17:05:42,750  
+ org.hibernate.jpa.internal.util.LogHelper 13743 main  INFO  HHH000204: Processing PersistenceUnitInfo [name: default] 2024-07-10 17:05:43,490  
+ org.hibernate.Version 13975 main  INFO  HHH000412: Hibernate ORM core version 5.6.15.Final 2024-07-10 17:05:43,722  
+ org.hibernate.annotations.common.Version 14457 main  INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 2024-07-10 17:05:44,204  
+ org.hibernate.dialect.Dialect 15004 main  INFO  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 2024-07-10 17:05:44,751  
+ org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 19296 main  INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 2024-07-10 17:05:49,043  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 19344 main  INFO  Initialized JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 17:05:49,091  
+ com.project.filter.jwtAuthFilter 20452 main  DEBUG  Filter 'jwtAuthFilter' configured for use 2024-07-10 17:05:50,199  
+ org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 21460 main  WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 2024-07-10 17:05:51,207  
+ org.springframework.security.web.DefaultSecurityFilterChain 22311 main  INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2319c1e0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@659e003e, org.springframework.security.web.context.SecurityContextPersistenceFilter@8cce9ad, org.springframework.security.web.header.HeaderWriterFilter@530a46f4, org.springframework.security.web.authentication.logout.LogoutFilter@2566247d, com.project.filter.jwtAuthFilter@a11efe6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ce0f50a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a023e34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f3c866c, org.springframework.security.web.session.SessionManagementFilter@2148849f, org.springframework.security.web.access.ExceptionTranslationFilter@6d77d269, org.springframework.security.web.access.intercept.AuthorizationFilter@64245ca9] 2024-07-10 17:05:52,058  
+ springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping 22380 main  INFO  Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 2024-07-10 17:05:52,127  
+ org.springframework.boot.web.embedded.tomcat.TomcatWebServer 23091 main  INFO  Tomcat started on port(s): 8080 (http) with context path '' 2024-07-10 17:05:52,838  
+ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper 23093 main  INFO  Context refreshed 2024-07-10 17:05:52,840  
+ springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper 23156 main  INFO  Found 1 custom documentation plugin(s) 2024-07-10 17:05:52,903  
+ springfox.documentation.spring.web.scanners.ApiListingReferenceScanner 23342 main  INFO  Scanning for api listing references 2024-07-10 17:05:53,089  
+ com.project.CustomerRelationshipManagementApplication 23750 main  INFO  Started CustomerRelationshipManagementApplication in 22.414 seconds (JVM running for 26.267) 2024-07-10 17:05:53,497  
+ org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 41926 http-nio-8080-exec-2  INFO  Initializing Spring DispatcherServlet 'dispatcherServlet' 2024-07-10 17:06:11,673  
+ org.springframework.web.servlet.DispatcherServlet 41927 http-nio-8080-exec-2  INFO  Initializing Servlet 'dispatcherServlet' 2024-07-10 17:06:11,674  
+ org.springframework.web.servlet.DispatcherServlet 41928 http-nio-8080-exec-2  INFO  Completed initialization in 1 ms 2024-07-10 17:06:11,675  
+ com.project.service.ICustomerServiceImpl 87861 http-nio-8080-exec-5  INFO  Customer is saved with customer id :: 1 2024-07-10 17:06:57,608  
+ org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean 604707 SpringApplicationShutdownHook  INFO  Closing JPA EntityManagerFactory for persistence unit 'default' 2024-07-10 17:15:34,454  
+ com.zaxxer.hikari.HikariDataSource 604718 SpringApplicationShutdownHook  INFO  HikariPool-1 - Shutdown initiated... 2024-07-10 17:15:34,465  
+ com.zaxxer.hikari.HikariDataSource 604783 SpringApplicationShutdownHook  INFO  HikariPool-1 - Shutdown completed. 2024-07-10 17:15:34,530  
+ 
